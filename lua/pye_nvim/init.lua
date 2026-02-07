@@ -142,7 +142,7 @@ function M.setup_venv(venv_path)
 	return false
 end
 
-vim.api.nvim_create_autocmd("Filetype", {
+vim.api.nvim_create_autocmd("FileType", {
 	pattern = "python",
 	callback = function()
 		if not vim.env.VIRTUAL_ENV then
